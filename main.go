@@ -3,8 +3,8 @@ package main
 import (
 	"github.com/gin-gonic/gin"
 	"unname/account"
-	_ "unname/pg/db"
-	_ "unname/pg/new"
+	_ "unname/utils/pg/db"
+	_ "unname/utils/pg/new"
 )
 
 func main() {

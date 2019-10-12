@@ -1,6 +1,6 @@
 package config
 
-import "unname/conf"
+import "unname/utils/conf"
 
 const (
 	PhoneCodeMember = "phone:code"

@@ -2,13 +2,13 @@ package handle
 
 import (
 	"github.com/gin-gonic/gin"
-	"unname/model/data"
 	"net/http"
-	"unname/model/response"
-	"unname/utils"
 	"time"
+	"unname/common/model/data"
+	"unname/common/model/response"
 	"unname/config"
-	"unname/redis"
+	"unname/utils"
+	"unname/utils/redis"
 )
 
 /*
@@ -17,7 +17,7 @@ import (
 	params:
 		username string
 		password string
- */
+*/
 
 func RootRegister(c *gin.Context) {
 	username := c.PostForm("username")
@@ -73,7 +73,7 @@ func RootPwdLogin(c *gin.Context) {
 		new_password string
 		phone string
 		code string
- */
+*/
 
 func RootPwdUpdate(c *gin.Context) {
 
@@ -86,7 +86,7 @@ func RootPwdUpdate(c *gin.Context) {
 		id string
 		phone string
 		code string
- */
+*/
 
 func RootPhoneBind(c *gin.Context) {
 	id := c.PostForm("id")
@@ -135,7 +135,7 @@ func RootPhoneBind(c *gin.Context) {
 	params:
 		phone string
 		code string
- */
+*/
 
 func RootPhoneLogin(c *gin.Context) {
 
@@ -146,7 +146,7 @@ func RootPhoneLogin(c *gin.Context) {
 	type: get
 	params:
 		id string
- */
+*/
 
 func RootLogout(c *gin.Context) {
 
@@ -157,7 +157,7 @@ func RootLogout(c *gin.Context) {
 	type: get
 	params:
 		id string
- */
+*/
 
 func RootAdminList(c *gin.Context) {
 
@@ -169,7 +169,7 @@ func RootAdminList(c *gin.Context) {
 	params:
 		id string
 		admin_id string
- */
+*/
 func RootAdminSubList(c *gin.Context) {
 
 }
@@ -179,7 +179,7 @@ func RootAdminSubList(c *gin.Context) {
 	type: get
 	params:
 		id string
- */
+*/
 
 func RootGeneralList(c *gin.Context) {
 

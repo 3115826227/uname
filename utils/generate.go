@@ -6,8 +6,8 @@ import (
 	"math/rand"
 	"strconv"
 	"time"
-	"unname/log"
-	"unname/redis"
+	"unname/utils/log"
+	"unname/utils/redis"
 )
 
 var (

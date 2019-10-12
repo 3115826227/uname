@@ -2,8 +2,8 @@ package data
 
 import (
 	"go.uber.org/zap"
-	"unname/log"
-	. "unname/pg/db"
+	"unname/utils/log"
+	. "unname/utils/pg/db"
 )
 
 type AccountRoot struct {

@@ -3,10 +3,10 @@ package handle
 import (
 	"github.com/gin-gonic/gin"
 	"net/http"
+	"unname/common/model/response"
 	"unname/config"
-	"unname/model/response"
-	"unname/redis"
 	"unname/utils"
+	"unname/utils/redis"
 )
 
 /*

@@ -4,7 +4,7 @@ import (
 	"github.com/go-xorm/xorm"
 	_ "github.com/lib/pq"
 	"unname/config"
-	"unname/log"
+	"unname/utils/log"
 )
 
 var (

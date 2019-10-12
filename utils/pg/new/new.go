@@ -3,7 +3,7 @@ package new
 import (
 	"github.com/go-xorm/xorm"
 	_ "github.com/lib/pq"
-	"unname/model/data"
+	"unname/common/model/data"
 )
 
 var (

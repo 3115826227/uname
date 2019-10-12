@@ -4,8 +4,8 @@ import (
 	"github.com/go-redis/redis"
 	"go.uber.org/zap"
 	"strconv"
-	"unname/conf"
-	"unname/log"
+	"unname/utils/conf"
+	"unname/utils/log"
 )
 
 var rds *redis.Client
